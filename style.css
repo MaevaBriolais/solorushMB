@@ -1,1 +1,123 @@
+*{ 
+    box-sizing: border-box;
+    line-height: 1;
+}
 
+
+header{
+    background-color: #cc5803 ;
+    margin-bottom : 1.5rem;
+    padding: 1rem;
+    border: 2px solid #e2711d;
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    nav a{
+        text-decoration: none;
+        color : #ffb627;
+        font-size: large;
+    }
+
+    @media screen and (min-width: 701px) {
+        display : none;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    div{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+
+        img{
+            width: 40%;
+            object-fit: contain;
+            border-radius: 50%;
+            border: 3px solid #e2711d ;
+        }
+    }
+
+    h1{
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size:larger;
+        padding: .5rem;
+        color: #e2711d;
+        border: 1px solid #e2711d;
+
+        @media screen and (min-width:701px){
+            font-size:xx-large;
+        }
+    }
+
+    p{
+        margin-left: 2rem;
+        margin-right: 2rem;
+        text-align: justify;
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    ul{
+        li{
+            margin-left: 3rem;
+            margin-right: 3rem;
+            line-height: 1.5;
+        }
+    }
+}
+
+
+footer{
+    background-color: #cc5803 ;
+    padding: .5rem;
+    border: 2px solid #e2711d;
+
+    h2{
+        color: #ffb627;
+        font-size: large;
+        text-align: center;
+
+    }
+
+
+
+    ul{
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        
+        li{
+            list-style: none;
+        }
+    }
+
+
+    @media  screen and (min-width: 701px) {
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;       
+        
+        h2{
+            display: flex;
+            align-items: center;
+        }
+        
+        ul{
+            display: flex;
+            flex-direction: column;
+            
+            li{
+                list-style: disc;
+                padding: .5rem;
+                margin-right: 1rem;
+        
+            }
+        }
+    }
+}
